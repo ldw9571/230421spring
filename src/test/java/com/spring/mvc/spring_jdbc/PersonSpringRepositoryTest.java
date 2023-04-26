@@ -46,7 +46,6 @@ class PersonSpringRepositoryTest {
         // then
         assertTrue(flag);
     }
-
     @Test
     void findAllTest() {
         List<Person> people = repository.findAll();
