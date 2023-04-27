@@ -16,19 +16,21 @@ class ScoreSpringRepositoryTest {
     ScoreSpringRepository scoreSpringRepository;
 
     @Test
-    void saveScoreTest(){
+    void saveTest(){
     Score s = new Score();
 
         s.setName("이동우");
         s.setKor(78);
         s.setEng(75);
         s.setMath(46);
-        s.setTotal(s.getKor()+s.getMath()+s.getEng());
+//        s.setTotal();
+//        s.setAverage();
+//        s.setGrade();
 
         scoreSpringRepository.saveScore(s);
     }
     @Test
-    void modifyScore(){
+    void findAll(){
         Score s = new Score();
         s.setKor(100);
         s.setEng(100);
