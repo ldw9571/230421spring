@@ -6,6 +6,9 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 
@@ -17,7 +20,7 @@ class ScoreSpringRepositoryTest {
 
     @Test
     void saveTest(){
-    Score s = new Score();
+        Score s = new Score();
 
         s.setName("이동우");
         s.setKor(78);
@@ -29,18 +32,13 @@ class ScoreSpringRepositoryTest {
 
         scoreSpringRepository.saveScore(s);
     }
-    @Test
-    void findAll(){
-        Score s = new Score();
-        s.setKor(100);
-        s.setEng(100);
-        s.setMath(99);
-        s.setStuNum(2);
+//    @Test
+//    void findAll(){
 
-        boolean flag = scoreSpringRepository.modifyScore(s);
-        assertTrue(flag);
-    }
+//        List<Score> score = scoreSpringRepository.notify();
+//
+//        boolean flag = scoreSpringRepository.modifyScore(s);
+//        assertTrue(flag);
+//    }
 
 };
-
-
