@@ -8,13 +8,13 @@
     <!--  SQL 작성: 추상메서드 별로 작성  -->
     <!--    id에는 추상메서드 이름을 적습니다. -->
     <insert id="save">
-        INSERT INTO score
+        INSERT INTO tbl_score
         (name, kor,eng,math,stu_num,total,average,grade)  //컬럼명
         VALUES (#{name},#{kor},#{eng},#{math},#{stuNum},#{total},#{average},#{grade}) //필드명
     </insert>
     
     <update id="deleteBystuNum">
-        DELETE FROM score
+        DELETE FROM tbl_score
         WHERE id = #{stuNum}
     </update>
 
@@ -23,11 +23,11 @@
     </resultMap>
 
     <select id="findAll" resultMap="score">
-        SELECT * FROM score
+        SELECT * FROM tbl_score
     </select>
 
     <select id="findByStuNum" resultMap="score">
-        SELECT * FROM score
+        SELECT * FROM tbl_score
         WHERE stu_num=#{stuNum}
     </select>
 

@@ -70,7 +70,7 @@ class PersonMapperTest {
         for (Person person : people) {
             System.out.println(person);
         }
-        assertEquals(7, people.size());
+        assertEquals(8, people.size());
     }
 
     @Test

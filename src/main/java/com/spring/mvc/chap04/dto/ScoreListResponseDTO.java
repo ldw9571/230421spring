@@ -2,7 +2,6 @@ package com.spring.mvc.chap04.dto;
 
 import com.spring.mvc.chap04.entity.Grade;
 import com.spring.mvc.chap04.entity.Score;
-import com.spring.mvc.chap07.entity2.Score2;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

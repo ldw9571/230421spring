@@ -24,8 +24,8 @@ public class ScoreMapperTest {
     void saveTest(){
 
         ScoreRequestDTO s = ScoreRequestDTO.builder()
-                .name("이동우")
-                .kor(75)
+                .name("이진수")
+                .kor(90)
                 .math(90)
                 .eng(68)
                 .build();
