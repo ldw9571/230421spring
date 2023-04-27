@@ -11,6 +11,7 @@ import org.springframework.stereotype.Repository;
 public class ScoreSpringRepository {
     private final JdbcTemplate jdbcTemplate;
 
+
     public void saveScore(Score s){
         String sql = "INSERT INTO tbl_score  " +
                 "(name,kor,eng,math,total) VALUES (?,?,?,?,?)";
